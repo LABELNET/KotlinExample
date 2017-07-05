@@ -11,6 +11,8 @@
         android:fontFamily="sans-serif-smallcaps"
         android:text="@string/hello_kotlin"
         android:textSize="30sp"
+        android:clickable="true"
+        android:onClick="moveIntoPluginPage"
         android:textStyle="bold|italic" />
 
 

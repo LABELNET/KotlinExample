@@ -1,10 +1,12 @@
 package cn.labelnet.kotlin.kotlinandroid
 
-import android.support.v7.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,6 +31,14 @@ class MainActivity : AppCompatActivity() {
     fun onMinusOne(view: View) {
         value--
         setTvValue()
+    }
+
+    /**
+     * 进入插件测试界面
+     */
+    fun moveIntoPluginPage(view: View) {
+        val intentFlag = Intent(this, PluginActivity::class.java)
+        startActivity(intentFlag)
     }
 
     /**
