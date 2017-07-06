@@ -10,7 +10,7 @@ import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
-    var value = 0;
+    var value = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
      * + 1
      */
     fun onAddOne(view: View) {
-        value++
+        value.inc()
         setTvValue()
     }
 
@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
      * -1
      */
     fun onMinusOne(view: View) {
-        value--
+        value.dec()
         setTvValue()
     }
 
